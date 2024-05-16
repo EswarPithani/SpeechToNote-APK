@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="btn_speak" type="id" />
+    <item name="textViewFileName" type="id" />
+    <item name="recyclerView" type="id" />
+    <item name="fileNameTextView" type="id" />
+</resources>

@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/background_6">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textViewAbout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="APP Description:\n\nThis application has been developed by a team of students participating in the EPICS program with the aim of facilitating the management of lecture-wise notes for both professors and students.\n\nObjective:\n- Pending approval from our supervisor, we intend to implement and refine this application in the upcoming semesters to enhance the efficiency of note-taking processes within our academic institution.\n\nScope:\n- Initially tailored to meet the specific requirements of our college, the application will incorporate domain constraints to ensure seamless integration with our institution's systems. Future iterations will focus on expanding its capabilities to cater to the diverse needs of other educational institutes.\n\nFuture Enhancements:\n- The application is envisioned to evolve into a versatile platform capable of accommodating various academic settings. With potential funding and approval, we aim to refine its functionality to provide comprehensive support for educational institutions beyond our own."
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+    </ScrollView>
+
+</LinearLayout>

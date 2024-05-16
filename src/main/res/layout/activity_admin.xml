@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    tools:context=".AdminActivity"
+    android:background="@drawable/background_4">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="4dp"
+        android:theme="@style/Theme.AppCompat.NoActionBar"
+        android:layout_alignParentTop="true">
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewStartRecording"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="#32CD32">
+
+        <Button
+            android:id="@+id/btn_start_recording"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   Start Recording"
+            android:textColor="#FFFFFF"
+            android:background="@android:color/transparent" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewViewPDF"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardViewStartRecording"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="#32CD32">
+
+        <Button
+            android:id="@+id/btn_view_pdf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="            View PDF"
+            android:textColor="#FFFFFF"
+            android:background="@android:color/transparent" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewViewRecordings"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardViewViewPDF"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="#32CD32">
+
+        <Button
+            android:id="@+id/btn_view_recordings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   View Recordings"
+            android:textColor="#FFFFFF"
+            android:background="@android:color/transparent" />
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/buttonLogout"
+        android:layout_below="@id/cardViewViewRecordings"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical" />
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/buttonProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="#3F51B5"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/buttonLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="#FF6347"
+        android:textColor="#FFFFFF" />
+
+
+
+</RelativeLayout>
