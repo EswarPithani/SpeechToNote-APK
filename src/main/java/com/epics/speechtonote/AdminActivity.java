@@ -240,7 +240,7 @@ public class AdminActivity extends AppCompatActivity {
     private void fetchProfileInfo(String username) {
         OkHttpClient client = new OkHttpClient();
         Request request = new Request.Builder()
-                .url("http://192.168.210.111:5000/profile/" + username)
+                .url("http://your_machine_ip:5000/profile/" + username)
                 .build();
 
         client.newCall(request).enqueue(new okhttp3.Callback() {
