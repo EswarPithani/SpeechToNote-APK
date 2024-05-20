@@ -14,8 +14,8 @@ app.logger.setLevel(logging.INFO)
 app.config['MYSQL_HOST'] = '127.0.0.1'
 app.config['MYSQL_PORT'] = 3306
 app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = 'Eswar@268'
-app.config['MYSQL_DB'] = 'my_db'
+app.config['MYSQL_PASSWORD'] = ''
+app.config['MYSQL_DB'] = ''
 mysql = MySQL(app)
 
 UPLOAD_FOLDER = 'uploads'
@@ -207,4 +207,4 @@ def get_user_role(user_id):
     return None
 
 if __name__ == '__main__':
-    app.run(host='192.168.210.111', port=5000)
+    app.run(host='', port=5000)
