@@ -105,7 +105,7 @@ public class RegistrationActivity extends AppCompatActivity{
             e.printStackTrace();
         }
 
-        String url = "http://192.168.210.111:5000/register";
+        String url = "http://your_machine_ip:5000/register";
         JsonObjectRequest request = new JsonObjectRequest(Request.Method.POST, url, jsonObject,
                 response -> {
                     try {
@@ -131,7 +131,7 @@ public class RegistrationActivity extends AppCompatActivity{
     }
     public void verifyCaptcha() {
         SafetyNet.getClient(RegistrationActivity.this)
-                .verifyWithRecaptcha("6LfOxMwpAAAAAGD06ZH-PSj5oKt0p6S71hexXxdH")
+                .verifyWithRecaptcha("your_captcha_key")
                 .addOnSuccessListener(this, recaptchaTokenResponse -> {
                     String userResponseToken = recaptchaTokenResponse.getTokenResult();
                     if (!TextUtils.isEmpty(userResponseToken)) {
