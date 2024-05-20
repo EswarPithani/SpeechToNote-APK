@@ -83,7 +83,7 @@ public class LoginActivity extends AppCompatActivity {
             Toast.makeText(this, "Username and password are required", Toast.LENGTH_SHORT).show();
             return;
         }
-        String url = "http://192.168.210.111:5000/login";
+        String url = "http://your_machine_ip:5000/login";
         JSONObject requestData = new JSONObject();
         try {
             requestData.put("username", username);
@@ -163,7 +163,7 @@ public class LoginActivity extends AppCompatActivity {
     }
     public void Catcha() {
         SafetyNet.getClient(LoginActivity.this)
-                .verifyWithRecaptcha("6LfOxMwpAAAAAGD06ZH-PSj5oKt0p6S71hexXxdH")
+                .verifyWithRecaptcha("your_captcha_key")
                 .addOnSuccessListener(this, recaptchaTokenResponse -> {
                     String userResponseToken = recaptchaTokenResponse.getTokenResult();
                     if (!TextUtils.isEmpty(userResponseToken)) {
